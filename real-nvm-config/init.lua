@@ -23,6 +23,7 @@ vim.o.background = "dark"
 --   hi Normal guibg=#0a0a0a
 -- ]]
 
+
 -- This has to be set before initializing lazy
 vim.g.mapleader = ","
 
