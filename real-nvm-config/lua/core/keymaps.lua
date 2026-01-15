@@ -7,6 +7,7 @@ local keymap = vim.keymap
 keymap.set("n", "ff", ":w<CR>") -- save
 keymap.set("i", "jj", "<Esc>") -- save
 keymap.set("n", "qq", ":q<CR>") -- save
+keymap.set("n", "qqq", ":qa<CR>") -- save
 keymap.set("n", ", ", ":b#<CR>") -- save
 
 keymap.set("n", "<leader>wq", ":wq<CR>") -- save and quit

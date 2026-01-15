@@ -15,13 +15,13 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.o.termguicolors = true
 vim.o.background = "dark"
-vim.cmd [[
-  set t_Col=256
-  set t_ut=
-  set background=dark
-  silent! colorscheme snow
-  hi Normal guibg=#0a0a0a
-]]
+-- vim.cmd [[
+--   set t_Col=256
+--   set t_ut=
+--   set background=dark
+--   silent! colorscheme snow
+--   hi Normal guibg=#0a0a0a
+-- ]]
 
 -- This has to be set before initializing lazy
 vim.g.mapleader = ","
