@@ -1,3 +1,4 @@
+
 -- Bootstrap lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -12,9 +13,18 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.o.termguicolors = true
+vim.o.background = "dark"
+vim.cmd [[
+  set t_Col=256
+  set t_ut=
+  set background=dark
+  silent! colorscheme snow
+  hi Normal guibg=#0a0a0a
+]]
 
 -- This has to be set before initializing lazy
-vim.g.mapleader = " "
+vim.g.mapleader = ","
 
 -- Initialize lazy with dynamic loading of anything in the plugins directory
 require("lazy").setup("plugins", {
@@ -27,3 +37,8 @@ require("lazy").setup("plugins", {
 -- These modules are not loaded by lazy
 require("core.options")
 require("core.keymaps")
+
+vim.g.loaded_perl_provider=0
+vim.g.loaded_ruby_provider=0
+vim.g.loaded_python3_provider=0
+vim.g.loaded_node_provider=0
